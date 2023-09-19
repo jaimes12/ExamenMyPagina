@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../Custom.css">
+    </head>
+    <body>
+        <div>
+            <ul class="navBar">
+                <a href="./Educacion.html"><li class="itemNav">Educacion</li></a>
+                <a href="./Logros.html"><li class="itemNav">Logros Personales</li></a>  
+                <a href="./hobbies.html"><li class="itemNav">Hobbies e <br> Intereses</li></a>
+                <a href="../Home.html"><li class="white"><h1>ANGEL JAIMES</h1></li></a>
+                <a href="./Actividades.html"><li class="itemNav">Actividades</li></a>
+                <a href="./Anecdotas.html"><li class="itemNav">Anécdotas</li></a>
+                <a href="#"><li class="itemNav">Comentarios</li></a>
+            </ul>
+            <div class="containerHome">
+                <div class="itemImg">
+                    <h1>Deja tus comentarios</h1>
+                    <form action="procesar_comentarios.php" method="POST">
+                        <label style="color: white;" for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+
+                        <label style="color: white;" for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required><br><br>
+
+                        <label style="color: white;" for="comentario">Comentario:</label><br>
+                        <textarea id="comentario" name="comentario" rows="4"
+                            cols="50" required></textarea><br><br>
+
+                        <input type="submit" value="Enviar Comentario">
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>
